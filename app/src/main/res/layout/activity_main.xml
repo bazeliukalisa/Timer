@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:text="@string/label"
+        android:textColor="@color/stopColor"
+        android:textSize="40dp"
+        android:textStyle="bold" />
+
+    <Chronometer
+        android:id="@+id/myChronometer"
+        android:layout_width="200dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:background="@android:drawable/dialog_holo_light_frame"
+        android:format="00:00:00"
+        android:gravity="center"
+        android:textSize="40dp"
+        android:textStyle="bold" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="50dp">
+
+        <Button
+            android:id="@+id/startId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:background="@color/startColor"
+            android:onClick="onStartClick"
+            android:text="@string/start" />
+
+        <Button
+            android:id="@+id/stopId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:background="@color/stopColor"
+            android:onClick="onStopClick"
+            android:text="@string/stop" />
+
+        <Button
+            android:id="@+id/stopId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:background="@color/backgroundColor"
+            android:onClick="onResetClick"
+            android:text="@string/reset" />
+
+    </LinearLayout>
+
+</LinearLayout>
